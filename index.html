@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css">
 		<title>Sally Student Resume</title>
 		<meta name="description" content="This is a resume of Sally Student">
 	</head>
 	<body>
+             
+        <div id="sally"></div>
+
         <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-		<div class="container">
+        <script type="text/babel">
+
+                  
+
+        ReactDOM.render (
+		<div>
 			<header role="banner">
 				<h1>Sally Student Resume</h1>
 			</header>
-			<img width=250px src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg">
+			<img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" style={{width:"250px"}}/>
 			
 			<main role="main">
 				<section role="region">
@@ -53,7 +61,9 @@
 				</p>
 				<address>5050 25Th Ave NE, Seattle, WA, 98109</address>
 			</footer>
-			
-		</div>
+			   </div>, 
+            document.querySelector('#sally')
+            );
+        </script>
 	</body>
 </html>
